@@ -3,23 +3,60 @@ import React, {useState} from "react";
 import { Projectcard } from "./ProjectCards";
 import imgen from "../images/donramon.jpg";
 import imgen2 from "../images/superdebarrio.jpg";
+import imagenpresup from "../images/imagenpresup.jpg";
 
 
 
 export const Projects =()=>{
         
-        const projects=[
+        const projectsReact=[
             {
                 index: 1,
                 tittle: "Bussiness Startup",
                 description: "Design y development",
                 imagen:imgen,
+                enlace:"https://presupuestadorreforma.netlify.app/",
             },
             {   
                 index: 2,
                 tittle: "Bussiness Startup",
                 description: "Design y development",
                 imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
+                enlace:"https://presupuestadorreforma.netlify.app/",
+            },
+        ];
+
+        const projectsLaravel=[
+            {
+                index: 1,
+                tittle: "Bussiness Startup",
+                description: "Design y development",
+                imagen:imgen,
+                enlace:"https://presupuestadorreforma.netlify.app/",
+            },
+            {   
+                index: 2,
+                tittle: "Bussiness Startup",
+                description: "Design y development",
+                imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
+                enlace:"https://presupuestadorreforma.netlify.app/",
+            },
+        ];
+
+        const projectsJs=[
+            {
+                index: 1,
+                tittle: "Presupuestador rápido Cocinas LM",
+                description: "Presupuestador express para orientar al cliente desarollado en Js/HTML/CSS",
+                imagen:imagenpresup,
+                enlace:"https://presupuestadorreforma.netlify.app",
+            },
+            {   
+                index: 2,
+                tittle: "Supermercado Familiar",
+                description: "Carrito de compras desarollado en Js/HTML/CSS. Se conecta a base de datos plataforma para extraer las actualizaciones de productos. Formulario de contacto con validaciones en Js. ",
+                imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
+                enlace:"https://supermercadodebarrio.netlify.app",
             },
         ];
 
@@ -42,7 +79,7 @@ export const Projects =()=>{
                     </Nav.Item>
                     <Nav.Item>
                     <Nav.Link eventKey="third">
-                         Angular
+                         Javascript
                     </Nav.Link>
                     
                     </Nav.Item>
@@ -51,9 +88,9 @@ export const Projects =()=>{
                         <TabContent >
                             <TabPane eventKey="first" >
                             <Row >
-                                {console.log(projects)}
+                                {console.log(projectsReact)}
                                 {console.log (imgen)}
-                                {projects.map((project,index)=>{
+                                {projectsReact.map((project,index)=>{
                                     return (
                                         <Projectcard key={index}{...project}/>
                                     )})}
@@ -63,8 +100,8 @@ export const Projects =()=>{
                             </TabPane>
                             <TabPane eventKey="second">
                             <Row  >
-                                {console.log(projects)}
-                                {projects.map((project,index)=>{
+                                {console.log(projectsLaravel)}
+                                {projectsLaravel.map((project,index)=>{
                                     return (
                                         <div>
                                         <a href="https://buscadorletrasdecanciones.netlify.app" target="blank" className="btn btn-primary">
@@ -77,10 +114,14 @@ export const Projects =()=>{
                             </TabPane>
                             <TabPane eventKey="third" >
                             <Row  >
-                                {console.log(projects)}
-                                {projects.map((project,index)=>{
+                                {console.log(projectsJs)}
+                                {projectsJs.map((project,index)=>{
                                     return (
-                                        <h5 className="pepe" key={index}>{project.description}</h5>
+                                        
+                                        
+                                        <Projectcard key={index}{...project}/>
+                                       
+                                        
                                     )})}
                                     
                                 

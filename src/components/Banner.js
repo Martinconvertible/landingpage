@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from "../images/header-img.svg";
+import headerImg from "../images/base imagen.png";
 import { useState, useEffect } from "react";
 
 
 
 export const Banner = () => {
-    const torotate= ["Web Developer Jr", "Arquitectura", "Musica"];
+    const torotate= ["React", "Laravel", "Javascript"];
     const [loopNum , setLoopNum] = useState(0);
     const [text , setText] = useState (''); 
     const [delta , setDelta] = useState (300 - Math.random () * 100) ;
@@ -56,8 +56,8 @@ export const Banner = () => {
                     {/* el col xs, bootstrap para diseño adaptativo en xs 12 es la unidad , osea 1 (pantalla completa) , en md 6 (la mitad) */}
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my portfolio </span>
-                        <h1> {'Hi Im webdecoded '} <span className="wrap">{text} </span></h1>
-                        <p> Pepepepepeepee </p>
+                        <h1> {'Hi! Im web developer JR.. '} <span className="wrap">{text} </span></h1>
+                        <p> Estoy incursionando en la programación desde hace tres años, he tomado cursos</p>
                         <button onClick={()=> alert ( " conectemseee")}> Contactame </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
