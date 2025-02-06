@@ -12,8 +12,8 @@ export const Contacto =()=>{
     }
 
     const [ formDetalles, setformDetalles] =useState(formInitialDetalles);
-    const [buttonText , setbuttonText ]= useState('send');
-    const [status, setStatus]= useState({});
+    //const [buttonText , setbuttonText ]= useState('send');
+    //const [status, setStatus]= useState({});
 
     const actualizarFormulario = ( categoria, valor) =>{
         setformDetalles (
@@ -54,13 +54,13 @@ export const Contacto =()=>{
                             <input type="email" value={formDetalles.email} placeholder="e-mail" onChange={(e)=>actualizarFormulario('email', e.target.value)} ></input>
                             </Col>
                             <textarea row="6" value={formDetalles.mensaje} placeholder="Escribe tu mensaje" onChange={(e)=>actualizarFormulario('mensaje', e.target.value)}></textarea>
-                            <button type="submit"> <span>{buttonText}</span></button>
+                            {/*<button type="submit"> <span>{buttonText}</span></button>*/}
                             <Col>
                             </Col>
                             <Col>
-                            {
+                            {/*
                                 status.mensaje &&
-                                <p className={status.success === false? "danger" : "success"}> {status.mensaje}</p>
+                                <p className={status.success === false? "danger" : "success"}> {status.mensaje}</p>*/
                             }
                             </Col>
                         </Row>

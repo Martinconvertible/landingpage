@@ -13,10 +13,10 @@ export const Banner = () => {
     const period = 2000 ;
     
 
-    {/* el modulo % de un numero es igual a por ej 4%3 se calcula... division  4 en 3 entra 1 vez dentro del 4, y luego
+    /* el modulo % de un numero es igual a por ej 4%3 se calcula... division  4 en 3 entra 1 vez dentro del 4, y luego
         restarle al 4 el numero (3*1 ---que es la cantidad de veces que entra osea 1), entonces
         4%3 =   4-(3*1) ---- de la misma forma 2%3-- 3 entra 0 veces en 2 por lo que será  2-(3*0)=2 ------------ es usara para repetir infinitamente 
-         las tres palabras guardadas*/}
+         las tres palabras guardadas*/
 
          useEffect (()=> {
             let ticker = setInterval (()=> { 

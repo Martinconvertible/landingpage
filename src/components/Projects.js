@@ -1,5 +1,5 @@
-import { Col, Container, Nav, NavLink, Row, Tab, TabContent, TabPane } from "react-bootstrap";
-import React, {useState} from "react";
+import { Col, Container, Nav, Row, Tab, TabContent, TabPane } from "react-bootstrap";
+/*import React, {useState} from "react";*/
 import { Projectcard } from "./ProjectCards";
 import imgen from "../images/donramon.jpg";
 import imgen2 from "../images/superdebarrio.jpg";
