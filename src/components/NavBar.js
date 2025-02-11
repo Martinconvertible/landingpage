@@ -33,8 +33,8 @@ return (
         <NavbarCollapse id="basic-navbar-nav">
             <nav className="me-auto">
             <NavLink href="#home" className={activeLink === "home"? 'active navbar-link':'navbar-link'} onClick={()=> cambiarExpresionBotones ('home')}> Home </NavLink>
-            <NavLink href="#home" className={activeLink === "skills"? 'active navbar-link':'navbar-link'} onClick={()=> cambiarExpresionBotones ('skills')}> Skills </NavLink>
-            <NavLink href="#home" className={activeLink === "projects"? 'active navbar-link':'navbar-link'} onClick={()=> cambiarExpresionBotones ('projects')}> Projects </NavLink>
+            <NavLink href="#skills" className={activeLink === "skills"? 'active navbar-link':'navbar-link'} onClick={()=> cambiarExpresionBotones ('skills')}> Educations </NavLink>
+            <NavLink href="#project" className={activeLink === "projects"? 'active navbar-link':'navbar-link'} onClick={()=> cambiarExpresionBotones ('projects')}> Projects </NavLink>
             </nav>
             <span className="navbar-text">
                 <div className="social-icon">

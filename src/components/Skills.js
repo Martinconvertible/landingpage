@@ -2,9 +2,9 @@ import { Container, Row ,Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 /*import { Carousel } from "react-multi-carousel";*/
 import "react-multi-carousel/lib/styles.css";
-import metere1 from "../images/meter1.svg";
-import metere2 from "../images/meter2.svg";
-import metere3 from "../images/meter3.svg";
+import metere1 from "../images/1SKILLS.jpg";
+import metere2 from "../images/2SKILLS.jpg";
+import metere3 from "../images/3SKILLS.jpg";
 import colorSharp from "../images/color-sharp.png";
 
 
@@ -35,23 +35,23 @@ export const Skills = () => {
                         <Col>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                Formaciones y aprendizajes
                             </h2>
                             <p>
-                                Arquitecto pies descalzos
+                                
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={metere1} alt="image" />
-                                    <h5> Web Developer</h5>
+                                    
                                 </div>
                                 <div className="item">
                                     <img src={metere2} alt="image" />
-                                    <h5> Web Developer</h5>
+                                    
                                 </div>
                                 <div className="item">
                                     <img src={metere3} alt="image" />
-                                    <h5> Web Developer</h5>
+                                    
                                 </div>
                             </Carousel>
                         </div>
