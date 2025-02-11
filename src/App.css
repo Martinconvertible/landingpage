@@ -1,3 +1,13 @@
+@media screen and (max-width:400px) {
+  .banner img {
+    width: 80%;
+      } }
+
+@media screen and (max-width:1200px) {
+        .banner img {
+          width: 80%;
+            } }
+
 @font-face {
   font-family: Centra;
   src: url('./fonts/CentraNo2-Bold.ttf');
