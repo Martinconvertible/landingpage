@@ -6,6 +6,7 @@ import imgen2 from "../images/superdebarrio.jpg";
 import imagenpresup from "../images/imagenpresup.jpg";
 import imgen3 from "../images/landingpage.jpg";
 import imgen4 from "../images/inversionito.jpg";
+import imgen5 from "../images/argentina.jpg";
 
 
 
@@ -32,10 +33,10 @@ export const Projects =()=>{
             },
             {   
                 index: 2,
-                tittle: "Bussiness Startup",
-                description: "Design y development",
+                tittle: "Venta de excursiones",
+                description: "Trabajo final para Fullstack PhP. Realizado en Laravel con DB en Maria Db",
                 imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
-                enlace:"https://presupuestadorreforma.netlify.app/",
+                enlace:"https://github.com/Martinconvertible/argentina",
             },
         ];
 
