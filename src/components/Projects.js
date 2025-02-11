@@ -4,6 +4,8 @@ import { Projectcard } from "./ProjectCards";
 import imgen from "../images/donramon.jpg";
 import imgen2 from "../images/superdebarrio.jpg";
 import imagenpresup from "../images/imagenpresup.jpg";
+import imgen3 from "../images/landingpage.jpg";
+import imgen4 from "../images/inversionito.jpg";
 
 
 
@@ -12,27 +14,21 @@ export const Projects =()=>{
         const projectsReact=[
             {
                 index: 1,
-                tittle: "Bussiness Startup",
-                description: "Design y development",
-                imagen:imgen,
-                enlace:"https://presupuestadorreforma.netlify.app/",
+                tittle: "Landing Personal Page",
+                description: "Pagina personal desarrollada con React, Tailwind CSS",
+                imagen:imgen3,
+                enlace:"https://landingpagemartin.netlify.app/",
             },
-            {   
-                index: 2,
-                tittle: "Bussiness Startup",
-                description: "Design y development",
-                imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
-                enlace:"https://presupuestadorreforma.netlify.app/",
-            },
+            
         ];
 
         const projectsLaravel=[
             {
                 index: 1,
-                tittle: "Bussiness Startup",
-                description: "Design y development",
-                imagen:imgen,
-                enlace:"https://presupuestadorreforma.netlify.app/",
+                tittle: "Inversionito: evaluador de precio relativo de acciones",
+                description: "Evlua rangos de precios mediante RSI por Apis. Desarrollada en Laravel. Link a repositorio",
+                imagen:imgen4,
+                enlace:"https://github.com/Martinconvertible/inversionito",
             },
             {   
                 index: 2,
@@ -66,9 +62,8 @@ export const Projects =()=>{
             <Container>
                 <Row>
                     <Col>
-                    <h1> Proyectos </h1>
-                    <p>Los proyectos se realizaron de la siguiente manera</p>
-                    <p> Estos son los proyectos en los que trabajé</p>
+                    <h1> Proyectos Personales</h1>
+                    
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" >
                     <Nav.Item>
@@ -103,10 +98,7 @@ export const Projects =()=>{
                                 {console.log(projectsLaravel)}
                                 {projectsLaravel.map((project,index)=>{
                                     return (
-                                        <div>
-                                        <a href="https://buscadorletrasdecanciones.netlify.app" target="blank" className="btn btn-primary">
-                                        <h5 className="pepe" key={index}>Proyecto </h5></a>
-                                        </div>
+                                        <Projectcard key={index}{...project}/>
                                     )})}
                                     
                                           

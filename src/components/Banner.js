@@ -46,7 +46,11 @@ export const Banner = () => {
                 }
 
             }
+
             
+            const scrollToProject =() =>{
+                window.location.href ="#project";
+            }
 
 
     return (
@@ -57,8 +61,8 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my portfolio </span>
                         <h1> {'Hi! Im web developer JR.. '} <span className="wrap">{text} </span></h1>
-                        <p> Estoy incursionando en la programación desde hace tres años, he tomado cursos</p>
-                        <button onClick={()=> alert ( " conectemseee")}> Contactame </button>
+                        <p> Aprendiendo y programando por cuenta propia hace tres años.</p>
+                        <button onClick={()=> scrollToProject()}> Mira mis proyectos </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="header Img"/>
