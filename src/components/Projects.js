@@ -34,8 +34,8 @@ export const Projects =()=>{
             {   
                 index: 2,
                 tittle: "Venta de excursiones",
-                description: "Trabajo final para Fullstack PhP. Realizado en Laravel con DB en Maria Db",
-                imagen:imgen2,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
+                description: "Trabajo final para Fullstack PhP. Realizado en Laravel con DB en Maria Db. Link a repositorio",
+                imagen:imgen5,  // referenciar la imagen del import de arriba aqui sin envolver en {}, osea imgen y no {imgen}
                 enlace:"https://github.com/Martinconvertible/argentina",
             },
         ];
