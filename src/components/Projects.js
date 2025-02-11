@@ -27,7 +27,7 @@ export const Projects =()=>{
             {
                 index: 1,
                 tittle: "Inversionito: evaluador de precio relativo de acciones",
-                description: "Evlua rangos de precios mediante RSI por Apis. Desarrollada en Laravel. Link a repositorio",
+                description: "Evalua rangos de precios mediante RSI por Apis. Desarrollada en Laravel. Link a repositorio",
                 imagen:imgen4,
                 enlace:"https://github.com/Martinconvertible/inversionito",
             },
