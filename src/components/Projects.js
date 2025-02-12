@@ -15,8 +15,8 @@ export const Projects =()=>{
         const projectsReact=[
             {
                 index: 1,
-                tittle: "Landing Personal Page",
-                description: "Pagina personal desarrollada con React, Tailwind CSS",
+                tittle: "Esta Landing Personal Page",
+                description: "Esta Pagina personal está desarrollada con React, Tailwind CSS",
                 imagen:imgen3,
                 enlace:"https://landingpagemartin.netlify.app/",
             },
