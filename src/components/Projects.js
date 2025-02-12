@@ -41,13 +41,7 @@ export const Projects =()=>{
         ];
 
         const projectsJs=[
-            {
-                index: 1,
-                tittle: "Presupuestador rápido Cocinas LM",
-                description: "Presupuestador express para orientar al cliente desarollado en Js/HTML/CSS",
-                imagen:imagenpresup,
-                enlace:"https://presupuestadorreforma.netlify.app",
-            },
+          
             {   
                 index: 2,
                 tittle: "Supermercado Familiar",
