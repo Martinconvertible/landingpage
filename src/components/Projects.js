@@ -29,7 +29,7 @@ export const Projects =()=>{
                 tittle: "Inversionito: evaluador de precio relativo de acciones",
                 description: "Evalua rangos de precios mediante RSI por Apis. Desarrollada en Laravel. Link a repositorio",
                 imagen:imgen4,
-                enlace:"https://github.com/Martinconvertible/inversionito",
+                enlace:"https://inversionito.tembotech.net",
             },
             {   
                 index: 2,
